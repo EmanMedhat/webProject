@@ -1,0 +1,41 @@
+.Navbar{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 90%;
+    background-color: #101219;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.button{
+    font-family: 'BIZ UDPGothic', sans-serif;
+    font-size: 10pt;
+    padding: 30pt;
+    border-radius: 30px;
+    color: white;
+    height: fit-content;
+    text-decoration: none;
+    transition: all .2s ease-in ;
+}
+.button:link{
+    color: white;
+}
+.button:hover{
+    background: linear-gradient(90deg,#51b2d1,#3790f5);
+    color: white;
+}
+#selected{
+    background-color: aliceblue;
+    color: black;
+}
+#selected:hover{
+    color: white;
+}
+@media all and (max-height: 750px) {
+    .Navbar{
+        bottom: 90%;
+    }
+}

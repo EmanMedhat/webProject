@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Status Of Student</title>
+        <link rel="icon" href="../Assets/Images/Cairo_University_Crest.png">
+        <link rel="stylesheet" href="../Assets/Css Styles/status style.css">
+        <link rel="stylesheet" href="../Assets/Css Styles/Navbar Style.css">
+        <link rel="stylesheet" href="../Assets/Css Styles/background.css">
+    </head>
+
+    <body>
+        <nav class="Navbar">
+            <a href="Home Page.html" class="button">Home</a>
+            <a href="add new student.html" class="button">Add Student</a>
+            <a href="Edit Student.html" class="button">Edit Student</a>
+            <a href="status.html" class="button" id="selected">Manage Student's Status</a>
+            <a href="student's assignment department.html" class="button">Manage Student's Department</a>
+            <a href="Search Page.html" class="button">Search</a>
+        </nav>
+            <div id="page">
+                <div class="title">Manage Status Of Students</div>
+                <table>
+        
+                    <thead>
+                        <tr>
+                            <th>Students</th>
+                            <th>Student Status</th>
+                            <th>Change Status</th>
+                            <th>Delete Student</th>
+                        </tr>
+                    </thead>
+        
+                    <tbody>
+        
+                        <tr>
+                            <td>Ahmed</td>
+                            <td>Active</td>
+                            <td><button name="to_inactive" type="button" value="Active" class="chan" onclick="confirmChan(this.parentNode.parentNode)">Change</button></td>
+                            <td><button type="button" class="chan" onclick="confirmDel(this.parentNode.parentNode)">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Zeyad</td>
+                            <td>Active</td>
+                            <td><button name="to_inactive" type="button" value="Active" class="chan" onclick="confirmChan(this.parentNode.parentNode)">Change</button></td>
+                            <td><button type="button" class="chan" onclick="confirmDel(this.parentNode.parentNode)">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Mohamed</td>
+                            <td>Inactive</td>
+                            <td><button name="to_inactive" type="button" value="Active" class="chan" onclick="confirmChan(this.parentNode.parentNode)">Change</button></td>
+                            <td><button type="button" class="chan" onclick="confirmDel(this.parentNode.parentNode)">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Ali</td>
+                            <td>Active</td>
+                            <td><button name="to_inactive" type="button" value="Active" class="chan" onclick="confirmChan(this.parentNode.parentNode)">Change</button></td>
+                            <td><button type="button" class="chan" onclick="confirmDel(this.parentNode.parentNode)">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Nada</td>
+                            <td>Inactive</td>
+                            <td><button name="to_inactive" type="button" value="Active" class="chan" onclick="confirmChan(this.parentNode.parentNode)">Change</button></td>
+                            <td><button type="button" class="chan" onclick="confirmDel(this.parentNode.parentNode)">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Mona</td>
+                            <td>Inactive</td>
+                            <td><button name="to_inactive" type="button" value="Active" class="chan" onclick="confirmChan(this.parentNode.parentNode)">Change</button></td>
+                            <td><button type="button" class="chan" onclick="confirmDel(this.parentNode.parentNode)">Delete</button></td>
+                        </tr>
+                    </tbody>
+        
+                </table>
+            </div>
+            <script src="../Assets/JavaScript/Manage.js"></script>
+    </body>
+</html>

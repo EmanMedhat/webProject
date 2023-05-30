@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8"/>
+    <title>Add New Student</title>
+    <link rel="icon" href="../Assets/Images/Cairo_University_Crest.png">
+    <link rel="stylesheet" href="../Assets/Css Styles/Add style.css">
+    <link rel="stylesheet" href="../Assets/Css Styles/Navbar Style.css">
+    <link rel="stylesheet" href="../Assets/Css Styles/background.css">
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="Navbar">
+        <a href="Home Page.html" class="button">Home</a>
+        <a href="add new student.html" class="button" id="selected">Add Student</a>
+        <a href="Edit Student.html" class="button">Edit Student</a>
+        <a href="status.html" class="button">Manage Student's Status</a>
+        <a href="student's assignment department.html" class="button">Manage Student's Department</a>
+        <a href="Search Page.html" class="button">Search</a>
+    </nav>
+    <div id="page">
+        <div class="title">Add New Student</div>
+        <form action="#">
+            <div class="userDetails">
+                <div class="inputBox">
+                    <span class="info">Full Name</span>
+                    <input type="text" id="name" autofocus minlength="3" maxlength="15" required placeholder="Enter Student Name" pattern="[a-zA-Z]+" title="Name Must Not Contain Any Number or Special Characters">
+                </div>
+                <div class="inputBox">
+                    <span class="info">Username</span>
+                    <input type="text" autofocus minlength="3" maxlength="15" required placeholder="Enter Student Username" pattern="[a-zA-Z0-9]+" title="Username Must Not Contain Any Special Characters">
+                </div>
+                <div class="inputBox">
+                    <span class="info">Email</span>
+                    <input type="email" required placeholder="Enter Student Email" pattern=".*@.*\..*" title="Email Must Contain A Valid Domain Name">
+                </div>
+                <div class="inputBox">
+                    <span class="info">ID</span>
+                    <input type="text" minlength="3" maxlength="10" required placeholder="Enter Student ID" pattern="[0-9]+" title="Student ID Must Not Contain Any Character">
+                </div>
+                <div class="inputBox">
+                    <span class="info">Birth Date</span>
+                    <input type="date" required placeholder="Enter Student Date">
+                </div>
+                <div class="inputBox">
+                    <span class="info">Mobile Number</span>
+                    <input type="text" required placeholder="Enter Student Mobile Number" pattern="[0-9]+" title="Mobile Number Must Not Contain Any Character">
+                </div>
+                <div class="inputBox">
+                    <span class="info">GPA</span>
+                    <input type="number" value="0" min="1" max="4" step="0.01">
+                </div>
+                <div class="gender">
+                    <span class="info">Gender :</span>
+                    <input required id="male" type="radio" value="Male" name="gender">
+                    <label for="male">Male</label>
+                    <input required id="female" type="radio" value="Female" name="gender">
+                    <label for="female">Female</label>
+                </div>
+                <div class="status">
+                    <span class="info">Status :</span>
+                    <input required id="active" type="radio" value="Active" name="status">
+                    <label for="active">Active</label>
+                    <input required id="Inactive" type="radio" value="Inactive" name="status">
+                    <label for="Inactive">Inactive</label>
+                </div>
+                <div class="level-depart">
+                    <span class="info">Level</span>
+                    <select>
+                        <optgroup>
+                            <option value="1">First Level</option>
+                            <option value="2">Second Level</option>
+                            <option value="3">Third Level</option>
+                            <option value="4">Fourth Level</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="level-depart">
+                    <span class="info">Department</span>
+                    <select>
+                        <optgroup label="General">
+                            <option value="no">None</option>
+                            <option value="CS">Computer science</option>
+                            <option value="AI">Artificial Intellegence</option>
+                            <option value="IT">Information Technology</option>
+                            <option value="IS">Information System</option>
+                            <option value="DS">Decision Support</option>
+                        </optgroup>
+                        <optgroup label="Credit">
+                            <option value="Bio">BioInformatics </option>
+                            <option value="SW">Software Engineering</option>
+                            <option value="SC">Cyber Security</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+            <div class="regButton">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+    <script src="../Assets/JavaScript/Add Student.js"></script>
+</body>
+</html>

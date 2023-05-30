@@ -1,0 +1,106 @@
+<!--update data for student-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Edit Student</title>
+        <link rel="icon" href="../Assets/Images/Cairo_University_Crest.png">
+        <link rel="stylesheet" href="../Assets/Css Styles/Add style.css">
+        <link rel="stylesheet" href="../Assets/Css Styles/Navbar Style.css">
+        <link rel="stylesheet" href="../Assets/Css Styles/background.css">
+        <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&display=swap" rel="stylesheet"> 
+    </head>
+<body>
+    <nav class="Navbar">
+        <a href="Home Page.html" class="button">Home</a>
+        <a href="add new student.html" class="button">Add Student</a>
+        <a href="Edit Student.html" class="button" id="selected">Edit Student</a>
+        <a href="status.html" class="button">Manage Student's Status</a>
+        <a href="student's assignment department.html" class="button">Manage Student's Department</a>
+        <a href="Search Page.html" class="button">Search</a>
+    </nav>
+    <div id="page">
+        <div class="title">Edit Student</div>
+        <form action="#">
+            <div class="userDetails">
+                <div class="inputBox">
+                    <label class="info" class="info">Student Id :</label class="info">
+                    <input type="text" placeholder="Enter Student ID" pattern="[0-9]+" title="Student ID Must Not Contain Any Character">
+                </div>
+                <div class="inputBox">
+                    <label class="info">Student Password :</label class="info">
+                    <input type="password" placeholder="Enter Student Password">
+                </div>
+                <div class="inputBox">
+                    <label class="info">Student Name :</label class="info" pattern="[a-zA-Z]+" title="Name Must Not Contain Any Number or Special Characters">
+                    <input type="text" placeholder="Enter Student Name">
+                </div>
+                <div class="inputBox">
+                    <label class="info">Student Nationality : </label class="info">
+                    <input type="text" placeholder="Enter Student Nationality"  pattern="[a-zA-z0-9]+" title="Nationality Must Not Contain Any Special Characters or Numbers">
+                </div>
+                <div class="inputBox">
+                    <label class="info">Student Address :</label class="info">
+                    <input type="text" placeholder="Enter Student Address"  pattern="[a-zA-z0-9]+" title="Address Must Not Contain Any Special Characters">
+                </div>
+                <div class="inputBox">
+                    <label class="info">Student National ID :</label class="info">
+                    <input type="text" placeholder="Enter Student National ID"  pattern="[0-9]+" title="National ID Must Not Contain Any Character">
+                </div>
+                <div class="inputBox">
+                    <label class="info">Student Phone :</label class="info">
+                    <input type="text" maxlength="11" placeholder="Enter Student Phone" pattern="[0-9]+" title="Phone Number Must Not Contain Any Character">
+                </div>
+                <div class="inputBox">
+                    <label class="info">Student Email :</label class="info">
+                    <input type="email" placeholder="Enter Student Email"  pattern=".*@.*\..*" title="Email Must Contain A Valid Domain Name">
+                </div>
+                <div class="inputBox">
+                    <label class="info">Student GPA :</label class="info">
+                    <input type="number" value="0" min="1" max="4" step="0.01">
+                </div>
+                <div class="gender">
+                    <label class="info">Gender :</label>
+                    <input id="male" type="radio" value="Male" name="gender">
+                    <label for="male">Male</label>
+                    <input id="female" type="radio" value="Female" name="gender">
+                    <label for="female">Female</label>
+                </div>  
+                <div class="level-depart">
+                    <label class="info">Student level :</label class="info">
+                    <select>
+                        <option>Level 1</option>
+                        <option>Level 2</option>
+                        <option>Level 3</option>
+                        <option>Level 4</option>
+                    </select>
+                </div>
+                <div class="level-depart">
+                    <label class="info">Student Department :</label class="info">
+                <select disabled>
+                    <option>General</option>
+                    <optgroup>
+                    <option>Computer Science </option>
+                    <option>Information Technology </option>
+                    <option>Information System </option>
+                    <option>Artificial Inteligence </option>
+                    <option>Decision Support </option>
+                    </optgroup>
+                        <optgroup>
+                            <option>Bioinformatics </option>
+                            <option>Software Engineering </option>
+                            <option>Cyber Security </option>
+                        </optgroup>
+                    </select> 
+                </div>
+            </div>
+            <div class="regButton">
+                <input type="submit" value="Update" onclick="confirmUpt()">
+            </div>
+        </form> 
+    </div>   
+    <script src="../Assets/JavaScript/Update.js"></script>
+</body>
+</html>
+

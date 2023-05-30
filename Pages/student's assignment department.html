@@ -1,0 +1,84 @@
+<!doctype html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Student's Department</title>
+        <link rel="icon" href="../Assets/Images/Cairo_University_Crest.png">
+        <link rel="stylesheet" href="../Assets/Css Styles/Add style.css">
+        <link rel="stylesheet" href="../Assets/Css Styles/Navbar Style.css">
+        <link rel="stylesheet" href="../Assets/Css Styles/background.css">
+        <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav class="Navbar">
+            <a href="Home Page.html" class="button">Home</a>
+            <a href="add new student.html" class="button">Add Student</a>
+            <a href="Edit Student.html" class="button">Edit Student</a>
+            <a href="status.html" class="button">Manage Student's Status</a>
+            <a href="student's assignment department.html" class="button" id="selected">Manage Student's Department</a>
+            <a href="Search Page.html" class="button">Search</a>
+        </nav>
+
+        <div id="page">
+
+            <div class="title">
+                Manage Student's Department
+            </div>
+
+            <form action="#">
+
+                <div class="userDetails">
+
+                    <div class="inputBox">
+                        <span class="info">Full Name</span>
+                        <input type="text" id="name" autofocus minlength="3" maxlength="15" required placeholder="Please, Enter the full name" pattern="[a-zA-Z]+" title="Name Must Not Contain Any Number Or Special Characters">
+                    </div>
+
+                    <div class="inputBox">
+                        <span class="info">ID</span>
+                        <input type="text" minlength="3" maxlength="10" required placeholder="Please, Enter the ID" pattern="[0-9]+" title="ID Must Not Contain Any Character">
+                    </div>
+
+                    <div class="level-depart">
+
+                        <span class="info">
+                        Department
+                        </span>
+
+                        <select>
+
+                            <optgroup label="General">
+                                <option value="no">None</option>
+                                <option value="CS">Computer science</option>
+                                <option value="AI">Artificial Intellegence</option>
+                                <option value="IT">Information Technology</option>
+                                <option value="IS">Information System</option>
+                                <option value="DS">Decision Support</option>
+                            </optgroup>
+
+                            <optgroup label="Credit">
+                                <option value="Bio">BioInformatics </option>
+                                <option value="SW">Software Engineering</option>
+                                <option value="SC">Cyber Security</option>
+                            </optgroup>
+
+                        </select>
+
+                    </div>
+
+                    <div class="regButton" style="margin-top: 1%; width: 100%;">
+                        <input type="submit" value="Set Department" onclick="confirmDep()">
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+        <script src="../Assets/JavaScript/Depart-Mang.js"></script>
+    </body>
+
+</html>
